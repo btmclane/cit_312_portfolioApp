@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Golf Tips and Product</title>
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="java.js" defer></script>
+    <style>
+    .button-container .btn {
+    width: 150px;
+    float: right;
+}
+
+h1 {
+    color: red;
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+.btn {
+    background-color: red ;
+    display: block;
+    
+}
+
+label {
+      display: inline-block;
+      width: 50em;
+      border: 5px dotted red;
+      background-color: bisque;
+      font-weight: bold;
+    }
+    h4 {
+      text-align: center;
+      background-color: bisque;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Golf Facts and Tips <span class="badge bg-danger">Learn more about golf today !</span></h1>
+
+    <div id="container-fluid">
+      <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+
+        <div class="col accordion-area">
+          <div class="accordion" id="accordionRecipes">
+            <h2 style="text-align: center; background-color: bisque;">Golf Records</h2>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+              <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne">
+              Longest Drive
+              </button>
+              </h2>
+              <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="Longest Drive"
+              data-bs-parent="#accordionRecipes">
+              <div class="accordion-body">
+              <strong>Davis Love III (476 Yards)</strong>
+              Davis Love III recorded the PGA Tour's longest drive ever recorded, in the ShotlLink era,
+              at the 2004 Mercedes Championship.
+              </div>
+              </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="true"
+                aria-controls="collapseTwo">
+                Longest Putt
+                </button>
+                </h2>
+                <div
+                id="collapseTwo"
+                class="accordion-collapse collapse "
+                aria-labelledby="Longest Putt"
+                data-bs-parent="#accordionRecipes">
+                <div class="accordion-body">
+                  <strong>Craig Barlow (111ft. 5in.)</strong>
+                  Craig Barlow drained the longest putt ever recorded, in the ShotLink era,
+                  at the 2008 Buick Open for an eagle.
+                </div>
+                </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                  <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="true"
+                  aria-controls="collapseThree">
+                  Longest Hole in One
+                  </button>
+                  </h2>
+                  <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse "
+                  aria-labelledby="Longest Hole in One"
+                  data-bs-parent="#accordionRecipes">
+                  <div class="accordion-body">
+                    <strong>Andrew Magee (332 Yards)</strong>
+                    Andrew Magee recorded the longest hole in one ever measured at TPC Scottsdale
+                    in the first round of the 2001 Phoenix Open.
+                  </div>
+                  </div>
+                  </div>               
+           </div>
+          <br>
+           <button type="button" class="btn btn-lg btn-secondary" data-bs-toggle="modal" data-bs-target="#mastersModal">
+            Masters Winners
+            </button> 
+      
+              <div class="modal fade"
+              id="mastersModal"
+              tabindex="-1"
+              aria-labelledby="mastersModalLabel"
+              aria-hidden="true">
+              
+              <div class="modal-dialog">
+              <div class="modal-content">
+              <div class="modal-header">
+      
+              <h5 class="modal-title"
+              id="mastersModalLabel">
+              Last 10 Masters Winners
+              </h5>
+              <button type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close">
+            </button>
+      
+              </div>
+              <div class="modal-body">
+      
+                <li>2022: Scottie Sheffeler (USA)</li>
+                <li>2021: Hideki Matsuyama (JPN)</li>
+                <li>2020: Dustin Johnson (USA)</li>
+                <li>2019: Tiger Woods (USA)</li>
+                <li>2018: Patrick Reed (USA)</li>
+                <li>2017: Sergio Garcia (SPN)</li>
+                <li>2016: Danny Willet (ENG)</li>
+                <li>2015: Jordan Spieth (USA)</li>
+                <li>2014: Bubba Watson (USA)</li>
+                <li>2013: Adam Scott (AUS)</li>
+      
+              </div>
+              <div class="modal-footer">
+      
+                <button type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal">
+                Close
+            </button>
+      
+              </div>
+              </div>
+              </div>
+            </div>
+<br>
+      </div>
+    
+        <div class="col carousel-area ">
+
+            <div
+            id="course_carousel"
+            class="carousel carousel-light"
+            data-bs-ride="carousel"
+            data-bs-interval="2000">
+    
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h2>Callaway Driver</h2>
+                <img
+                class="d-block w-100"
+                src="driver.jpg"
+                alt="Driver"
+                />
+                </div>
+    
+                <div class="carousel-item">
+                  <h2>Callaway Iron</h2>
+                  <img
+                  class="d-block w-100"
+                  src="iron.jpg"
+                  alt="Iron"
+                  />
+                  </div>
+    
+                  <div class="carousel-item">
+                    <h2>Superstroke Putter</h2>
+                    <img
+                    class="d-block w-100"
+                    src="putt.jpg"
+                    alt="Superstroke Putter"
+                    />
+                    </div>
+    
+                    <div class="carousel-item">
+                      <h2>Callaway Golf Balls</h2>
+                      <img
+                      class="d-block w-100"
+                      src="ball.jpg"
+                      alt="Golf Ball"
+                      />
+                      </div>
+    
+    </div>
+  </div>
+
+    
+    <form>
+      <br><br>
+    <label for="comment">
+
+        Leave any new tips and tricks you know and/or tell us about your experience with golf:
+      
+        <textarea
+          id="comment"
+          name="comment"
+          placeholder="Comments"
+        >
+      
+        </textarea>
+      
+      </label>
+      </form>
+    </div>
+
+    <div class="tooltip-area">
+      <div>
+        <span
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="United States Golf Association Rulebook">
+        <img src="rulebook.jpg"
+        style="width: 300px; height: 300px"/>
+        </span>
+        </div>
+    </div>
+
+        <div class="col button-container">
+
+          
+
+        <button class="btn btn-lg btn-secondary d-block m-4"
+      data-bs-container="body"
+      data-bs-toggle="popover"
+      data-bs-placement="right"
+      title="More Distance"
+      data-bs-content="When you want to get more distance on your shots, you will want to place your front foot 
+      even with the ball and lean back a bit to get the ball more in the air">
+        <span> <i class="bi bi-rocket-takeoff-fill"></i></span>
+        <span style="margin-left: 10px">Power</span>
+        </button>
+
+        <button class="btn btn-lg btn-secondary d-block m-4"
+      data-bs-container="body"
+      data-bs-toggle="popover"
+      data-bs-placement="right"
+      title="Better Accuracy"
+      data-bs-content="A good tip for accuracy is a lot of people place their thumb under farther down than than
+      their index finger causing it to slice. Once you get your thumb above your index finger, you will have better accuracy">
+        <span> <i class="bi bi-bullseye"></i></span>
+        <span style="margin-left: 10px">Accuracy</span>
+        </button>
+
+        <button class="btn btn-lg btn-secondary d-block m-4"
+      data-bs-container="body"
+      data-bs-toggle="popover"
+      data-bs-placement="right"
+      title="Better Contact"
+      data-bs-content="Contact is very important in the golf game so you will want to practice keeping your eyes down on the ball
+      and don't look up until after you've hit it. This prevents you from raising up and missing the sweet spot on the ball.">
+        <span> <i class="bi bi-radioactive"></i></span>
+        <span style="margin-left: 10px">Contact</span>
+        </button>
+</div>
+
+
+
+    </div>
+    
+</body>
+
+</html>
